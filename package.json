@@ -1,0 +1,54 @@
+{
+  "name": "@iamrakesh-codes/resume",
+  "version": "1.0.0",
+  "description": "CLI to print Rakesh Ramkishor Singh's resume in the terminal via npx.",
+  "bin": "bin/index.js",
+  "type": "commonjs",
+  "files": [
+    "bin/",
+    "resume.txt",
+    "resume.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "resume",
+    "cv",
+    "cli",
+    "rakesh",
+    "ramkishor",
+    "singh"
+  ],
+  "author": {
+    "name": "Rakesh Ramkishor Singh",
+    "email": "rakeshsinghtcp@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://linkedin.com/in/iamrakesh-codes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://example.com/iamrakesh-codes/resume.git"
+  },
+  "bugs": {
+    "url": "https://example.com/iamrakesh-codes/resume/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "start": "node bin/index.js",
+    "preview": "node bin/index.js --width-perc=98",
+    "preview:ascii": "node bin/index.js --ascii --no-color --width-perc=98"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "clear": "^0.1.0",
+    "commander": "^12.0.0",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2"
+  }
+}
