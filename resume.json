@@ -1,0 +1,191 @@
+{
+  "name": "RAKESH RAMKISHOR SINGH",
+  "location": "Navi Mumbai, IN",
+  "contact": {
+    "email": "rakeshsinghtcp@gmail.com",
+    "phone": "+91 7021134166",
+    "linkedin": "https://www.linkedin.com/in/RakeshSingh61/",
+    "portfolio": "https://iamrakesh.codes",
+    "github": "https://github.com/rakeshsingh38"
+  },
+  "sections": [
+    {
+      "title": "Education",
+      "items": [
+        {
+          "institution": "Smt. Indira Gandhi College of Engineering",
+          "location": "Ghansoli",
+          "period": "Dec 2020 - May 2024",
+          "degree": "Bachelor of Engineering in CSE (IOT Specialization)",
+          "gpa": "8.2 CGPA"
+        },
+        {
+          "institution": "Yashvantrao Chavan College of Science",
+          "location": "Thane",
+          "period": "May 2020",
+          "degree": "Higher Secondary Certificate (State Board)",
+          "score": "66.77%"
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "categories": [
+        {
+          "name": "Frontend",
+          "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "React.js",
+            "Next.js",
+            "Tailwind CSS",
+            "Material UI",
+            "ShadCN UI"
+          ]
+        },
+        {
+          "name": "Backend & Databases",
+          "skills": [
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "PostgreSQL",
+            "SQL",
+            "Oracle DB",
+            "Firebase"
+          ]
+        },
+        {
+          "name": "Programming Languages",
+          "skills": [
+            "C",
+            "C++",
+            "Java",
+            "Python"
+          ]
+        },
+        {
+          "name": "DevOps & Tools",
+          "skills": [
+            "Docker",
+            "Linux",
+            "CI/CD (GitLab, Render, Railway)",
+            "Postman",
+            "Networking"
+          ]
+        },
+        {
+          "name": "Deployment & Hosting",
+          "skills": [
+            "Vercel",
+            "Netlify",
+            "Render",
+            "Heroku",
+            "AWS"
+          ]
+        },
+        {
+          "name": "Concepts",
+          "skills": [
+            "Microservices",
+            "RESTful APIs",
+            "Event-driven Architecture",
+            "Agile/Scrum",
+            "Observability"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "projects": [
+        {
+          "name": "Timeline",
+          "subtitle": "Role based Workspace Manager",
+          "stack": [
+            "Next.js",
+            "Socket.io",
+            "Node.js",
+            "Zustand",
+            "MongoDB"
+          ],
+          "links": {
+            "github": "https://github.com/rakeshsingh38/timeline-nextjs",
+            "demo": "https://mytimeline.in"
+          },
+          "highlights": [
+            "Real-time presence tracking and analytics (Next.js, React, Node.js, Socket.io)",
+            "JWT auth, RESTful APIs, granular RBAC (Owner/Admin/Member)",
+            "Responsive, theme-aware UI (Tailwind, ShadCN, Radix UI, Recharts) with 95+ Lighthouse",
+            "Optimized backend (MongoDB, modular APIs, TypeScript utilities)"
+          ]
+        },
+        {
+          "name": "Summora",
+          "subtitle": "AI Reading Assistant",
+          "stack": [
+            "Next.js",
+            "GPT-4",
+            "LangChain",
+            "Pinecone",
+            "Clerk",
+            "Tailwind",
+            "PostgreSQL"
+          ],
+          "links": {
+            "github": "https://github.com/rakeshsingh38/summora",
+            "demo": "https://summora.iamrakesh.codes"
+          },
+          "highlights": [
+            "Real-time PDF summarization (GPT-4 + LangChain)",
+            "Auth & subscriptions via Clerk + Stripe Webhooks",
+            "Responsive UI with ShadCN & Tailwind"
+          ]
+        },
+        {
+          "name": "Pulse",
+          "subtitle": "Real-Time Monitoring Platform",
+          "stack": [
+            "Next.js",
+            "React",
+            "Prisma",
+            "Stripe",
+            "PostgreSQL"
+          ],
+          "links": {
+            "github": "https://github.com/rakeshsingh38/pulse",
+            "demo": "https://pulse.iamrakesh.codes"
+          },
+          "highlights": [
+            "Monitoring dashboard with alerts, metrics, and logs",
+            "Auth with Clerk (OAuth/Email) and Stripe subscriptions",
+            "Prisma + NeonDB, deployed on Vercel, Tailwind & ShadCN UI"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Achievements",
+      "achievements": [
+        {
+          "name": "MongoDB Node.js Developer Path – MongoDB University",
+          "date": "Jul 2025"
+        },
+        {
+          "name": "AWS Certified Cloud Practitioner Exam (CCP) - GeeksForGeeks",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "200 Days Badge - LeetCode",
+          "date": "Aug 2024"
+        },
+        {
+          "name": "Applied Algorithms & Data Structures – AlgoZenith",
+          "date": "Oct 2023"
+        }
+      ]
+    }
+  ]
+}
