@@ -8,10 +8,10 @@
 
 ```bash
 # Run instantly
-npx rakeshsingh61
+npx @rakeshsingh61
 
 # Or install globally
-npm install -g rakeshsingh61
+npm install -g @rakeshsingh61
 ```
 
 ## 🎯 Commands
