@@ -1,6 +1,8 @@
 # 📄 Rakesh's Resume CLI
 
 > Interactive terminal resume - Clean, fast, and developer-friendly!
+> 
+> [![npm version](https://badge.fury.io/js/rakeshsingh61.svg)](https://www.npmjs.com/package/rakeshsingh61)
 
 ## 🚀 Quick Start
 
