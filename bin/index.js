@@ -148,7 +148,10 @@ const simpleCommands = {
         console.log(`Email: ${data.contact?.email || ""}`);
         console.log(`Phone: ${data.contact?.phone || ""}`);
         console.log(`Location: ${data.location || ""}`);
-        console.log(`LinkedIn: ${data.contact?.linkedin || ""}`);
+        if (data.contact?.linkedin) console.log(`LinkedIn: ${data.contact.linkedin}`);
+        if (data.contact?.github) console.log(`GitHub: ${data.contact.github}`);
+        if (data.contact?.portfolio) console.log(`Portfolio: ${data.contact.portfolio}`);
+        if (data.contact?.leetcode) console.log(`LeetCode: ${data.contact.leetcode}`);
     },
 
     // Display technical skills by category
@@ -181,8 +184,11 @@ const simpleCommands = {
 
     // List achievements and certifications
     achievements: (data) => {
-        const section = getSection(data, "achievement");
-        section?.achievements?.forEach((ach, i) =>
+        const section = getSection(data, "achievement") || getSection(data, "certification");
+        if (!section) return;
+        
+        const items = section.achievements || section.certifications;
+        items?.forEach((ach, i) =>
             console.log(
                 `${i + 1}. ${ach.name}${ach.date ? " (" + ach.date + ")" : ""}`
             )
@@ -204,8 +210,12 @@ const simpleCommands = {
 
             if (project) {
                 console.log(`${project.name} - ${project.subtitle}`);
-                console.log(`Stack: ${project.stack.join(", ")}\n`);
-                console.log("Highlights:");
+                console.log(`Stack: ${project.stack.join(", ")}`);
+                if (project.links) {
+                    if (project.links.github) console.log(`GitHub: ${project.links.github}`);
+                    if (project.links.demo) console.log(`Demo: ${project.links.demo}`);
+                }
+                console.log("\nHighlights:");
                 project.highlights.forEach((h) => console.log(`• ${h}`));
             } else {
                 console.log(
@@ -216,10 +226,17 @@ const simpleCommands = {
                 );
             }
         } else {
-            // Show overview of all projects
+            // Show all projects with full details
             section.projects.forEach((proj, i) => {
                 console.log(`${i + 1}. ${proj.name} - ${proj.subtitle}`);
-                console.log(`   Stack: ${proj.stack.join(", ")}\n`);
+                console.log(`   Stack: ${proj.stack.join(", ")}`);
+                if (proj.links) {
+                    if (proj.links.github) console.log(`   GitHub: ${proj.links.github}`);
+                    if (proj.links.demo) console.log(`   Demo: ${proj.links.demo}`);
+                }
+                console.log(`   Highlights:`);
+                proj.highlights?.forEach((h) => console.log(`   • ${h}`));
+                console.log(""); // Empty line between projects
             });
         }
     },
@@ -376,14 +393,34 @@ function formatResume(data, colors) {
                 lines.push(`${cat.name}: ${cat.skills.join(", ")}`)
             );
         } else if (section.projects) {
-            section.projects.forEach((proj) => {
+            section.projects.forEach((proj, index) => {
                 lines.push(
                     `${proj.name}${proj.subtitle ? " – " + proj.subtitle : ""}${
                         proj.stack ? " | " + proj.stack.join(", ") : ""
                     }`
                 );
                 proj.highlights?.forEach((h) => lines.push(`- ${h}`));
+                // Add empty line between projects (but not after the last one)
+                if (index < section.projects.length - 1) {
+                    lines.push("");
+                }
             });
+        } else if (section.experience) {
+            section.experience.forEach((exp, index) => {
+                lines.push(`${exp.position} at ${exp.company}`);
+                if (exp.duration) lines.push(`Duration: ${exp.duration}`);
+                exp.highlights?.forEach((h) => lines.push(`- ${h}`));
+                // Add empty line between experiences (but not after the last one)
+                if (index < section.experience.length - 1) {
+                    lines.push("");
+                }
+            });
+        } else if (section.certifications) {
+            section.certifications.forEach((cert) =>
+                lines.push(
+                    `- ${cert.name}${cert.date ? " (" + cert.date + ")" : ""}`
+                )
+            );
         } else if (section.achievements) {
             section.achievements.forEach((ach) =>
                 lines.push(

@@ -81,11 +81,12 @@ function createHeader(name, { figletLib, gradientLib, clearLib, colors, caps, fl
   // Try to create ASCII art text if figlet is available
   if (useFancy && figletLib && name) {
     try {
-      const maxWidth = Math.min(caps.cols - 2, 100); // Don't exceed terminal width
+      const maxWidth = Math.min(caps.cols - 2, 120); // Don't exceed terminal width
       banner = figletLib.textSync(name, { 
-        font: 'Standard',           // Use the standard figlet font
+        font: 'Big',                // Use Big font for better spacing
         width: maxWidth,            // Limit width to terminal size
-        whitespaceBreak: true       // Break on whitespace if needed
+        whitespaceBreak: true,      // Break on whitespace if needed
+        horizontalLayout: 'full'    // Full spacing between characters
       });
     } catch {
       // If figlet fails, just use the uppercase name

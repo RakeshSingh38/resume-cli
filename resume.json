@@ -1,12 +1,13 @@
 {
-  "name": "RAKESH RAMKISHOR SINGH",
-  "location": "Navi Mumbai, IN",
+  "name": "RAKESH SINGH",
+  "location": "Mumbai, India",
   "contact": {
     "email": "rakeshsinghtcp@gmail.com",
     "phone": "+91 7021134166",
     "linkedin": "https://www.linkedin.com/in/RakeshSingh61/",
+    "leetcode": "https://leetcode.com/u/RakeshSingh38/",
     "portfolio": "https://iamrakesh.codes",
-    "github": "https://github.com/rakeshsingh38"
+    "github": "https://github.com/RakeshSingh38"
   },
   "sections": [
     {
@@ -15,16 +16,9 @@
         {
           "institution": "Smt. Indira Gandhi College of Engineering",
           "location": "Ghansoli",
-          "period": "Dec 2020 - May 2024",
-          "degree": "Bachelor of Engineering in CSE (IOT Specialization)",
-          "gpa": "8.2 CGPA"
-        },
-        {
-          "institution": "Yashvantrao Chavan College of Science",
-          "location": "Thane",
-          "period": "May 2020",
-          "degree": "Higher Secondary Certificate (State Board)",
-          "score": "66.77%"
+          "period": "December 2020 - May 2024",
+          "degree": "Bachelor of Engineering in CSE (IOT & Cyber Security Specialization)",
+          "gpa": "8.24 CGPA"
         }
       ]
     },
@@ -32,17 +26,27 @@
       "title": "Skills",
       "categories": [
         {
-          "name": "Frontend",
+          "name": "Programming Languages",
           "skills": [
-            "HTML",
-            "CSS",
-            "JavaScript (ES6+)",
             "TypeScript",
-            "React.js",
+            "JavaScript (ES6+)",
+            "Go",
+            "C++",
+            "Python",
+            "Bash"
+          ]
+        },
+        {
+          "name": "Frontend & UI",
+          "skills": [
             "Next.js",
+            "React.js",
+            "HTML5",
+            "CSS3",
             "Tailwind CSS",
             "Material UI",
-            "ShadCN UI"
+            "Zustand/Redux",
+            "TanStack Query"
           ]
         },
         {
@@ -50,50 +54,37 @@
           "skills": [
             "Node.js",
             "Express.js",
-            "MongoDB",
             "PostgreSQL",
-            "SQL",
-            "Oracle DB",
-            "Firebase"
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Kafka",
+            "Prisma"
           ]
         },
         {
-          "name": "Programming Languages",
+          "name": "Cloud & DevOps",
           "skills": [
-            "C",
-            "C++",
-            "Java",
-            "Python"
-          ]
-        },
-        {
-          "name": "DevOps & Tools",
-          "skills": [
+            "AWS (EC2, S3, Lambda)",
             "Docker",
+            "CI/CD",
             "Linux",
-            "CI/CD (GitLab, Render, Railway)",
+            "Prometheus",
+            "Grafana",
+            "Git/GitHub",
+            "Heroku"
+          ]
+        },
+        {
+          "name": "Tools & Concepts",
+          "skills": [
+            "WebSockets",
+            "REST APIs",
+            "GraphQL",
             "Postman",
-            "Networking"
-          ]
-        },
-        {
-          "name": "Deployment & Hosting",
-          "skills": [
-            "Vercel",
-            "Netlify",
-            "Render",
-            "Heroku",
-            "AWS"
-          ]
-        },
-        {
-          "name": "Concepts",
-          "skills": [
-            "Microservices",
-            "RESTful APIs",
-            "Event-driven Architecture",
-            "Agile/Scrum",
-            "Observability"
+            "k6",
+            "Data Structures & Algorithms",
+            "Design Patterns"
           ]
         }
       ]
@@ -102,87 +93,110 @@
       "title": "Projects",
       "projects": [
         {
-          "name": "Timeline",
-          "subtitle": "Role based Workspace Manager",
+          "name": "Meteor Bot",
+          "subtitle": "Meeting Assistant",
           "stack": [
             "Next.js",
-            "Socket.io",
-            "Node.js",
-            "Zustand",
+            "Prisma",
+            "Pinecone",
+            "Stripe",
+            "AWS Lambda"
+          ],
+          "links": {
+            "github": "https://github.com/RakeshSingh38/meteor-bot-readme",
+            "demo": "https://meteorbot.novacloud.co.in"
+          },
+          "highlights": [
+            "Scaled an AI meeting assistant to 10,000+ users with real-time transcription, summaries, and action items",
+            "Architected serverless backend with AWS Lambda + Prisma processing 500+ concurrent transcription jobs",
+            "Integrated Stripe payments, Clerk authentication, and OAuth (Google, Slack, Jira)",
+            "Built accessible UI with Next.js, Tailwind, and Framer Motion achieving 95+ Lighthouse scores"
+          ]
+        },
+        {
+          "name": "StockWise",
+          "subtitle": "Smart Stock Alerts",
+          "stack": [
+            "Next.js",
+            "Inngest",
+            "Recharts",
             "MongoDB"
           ],
           "links": {
-            "github": "https://github.com/rakeshsingh38/timeline-nextjs",
+            "github": "https://github.com/RakeshSingh38/stockwise-app-readme",
+            "demo": "https://stockwise.iamrakesh.codes"
+          },
+          "highlights": [
+            "Built dual-market stock tracking platform (NSE/BSE + US) with real-time price updates and TradingView charts",
+            "Engineered multi-channel alert system processing 50,000+ daily events with instant Email & Telegram notifications",
+            "Designed personalized watchlist with debounced API calls, improving responsiveness by 3x",
+            "Automated daily market digests via Inngest, increasing engagement by 40%"
+          ]
+        },
+        {
+          "name": "Timeline",
+          "subtitle": "Workspace & Role Manager",
+          "stack": [
+            "Next.js",
+            "Go",
+            "WebSocket",
+            "Swagger",
+            "Zustand",
+            "k6"
+          ],
+          "links": {
+            "github": "https://github.com/RakeshSingh38/timeline-readme",
             "demo": "https://mytimeline.in"
           },
           "highlights": [
-            "Real-time presence tracking and analytics (Next.js, React, Node.js, Socket.io)",
-            "JWT auth, RESTful APIs, granular RBAC (Owner/Admin/Member)",
-            "Responsive, theme-aware UI (Tailwind, ShadCN, Radix UI, Recharts) with 95+ Lighthouse",
-            "Optimized backend (MongoDB, modular APIs, TypeScript utilities)"
-          ]
-        },
-        {
-          "name": "Summora",
-          "subtitle": "AI Reading Assistant",
-          "stack": [
-            "Next.js",
-            "GPT-4",
-            "LangChain",
-            "Pinecone",
-            "Clerk",
-            "Tailwind",
-            "PostgreSQL"
-          ],
-          "links": {
-            "github": "https://github.com/rakeshsingh38/summora",
-            "demo": "https://summora.iamrakesh.codes"
-          },
-          "highlights": [
-            "Real-time PDF summarization (GPT-4 + LangChain)",
-            "Auth & subscriptions via Clerk + Stripe Webhooks",
-            "Responsive UI with ShadCN & Tailwind"
-          ]
-        },
-        {
-          "name": "Pulse",
-          "subtitle": "Real-Time Monitoring Platform",
-          "stack": [
-            "Next.js",
-            "React",
-            "Prisma",
-            "Stripe",
-            "PostgreSQL"
-          ],
-          "links": {
-            "github": "https://github.com/rakeshsingh38/pulse",
-            "demo": "https://pulse.iamrakesh.codes"
-          },
-          "highlights": [
-            "Monitoring dashboard with alerts, metrics, and logs",
-            "Auth with Clerk (OAuth/Email) and Stripe subscriptions",
-            "Prisma + NeonDB, deployed on Vercel, Tailwind & ShadCN UI"
+            "Enabled real-time collaboration for 10,000+ concurrent users with Go WebSocket server (4ms median latency)",
+            "Secured 50+ API endpoints with WebAuthn/OAuth, containerized with Docker, automated zero-downtime deployments",
+            "Optimized frontend with Web Workers, code-splitting, and lazy loading, reducing main-thread blocking by 40%",
+            "Designed interactive onboarding tour, cutting setup time by 65% and boosting retention"
           ]
         }
       ]
     },
     {
-      "title": "Achievements",
-      "achievements": [
+      "title": "Work Experience",
+      "experience": [
         {
-          "name": "MongoDB Node.js Developer Path – MongoDB University",
-          "date": "Jul 2025"
+          "position": "Web Developer Intern",
+          "company": "Octanet Services",
+          "duration": "June 2025 - Aug 2025",
+          "highlights": [
+            "Delivered 3 production-ready features and resolved 6+ bugs in Agile sprints, improving application stability by 25%",
+            "Refactored 5+ core UI components using ShadCN, Zod, and TanStack Query, reducing load times by 30%",
+            "Conducted 10+ peer code reviews, raising team code quality by 20%"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Certifications",
+      "certifications": [
+        {
+          "name": "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+          "date": "Nov 2025"
         },
         {
-          "name": "AWS Certified Cloud Practitioner Exam (CCP) - GeeksForGeeks",
-          "date": "Jun 2025"
+          "name": "Oracle Cloud Infrastructure Architect Associate",
+          "date": "Oct 2025"
         },
         {
-          "name": "200 Days Badge - LeetCode",
+          "name": "Open-Source Multi-Agent AI System (600+ GitHub Downloads)",
+          "date": "Sept 2025"
+        },
+        {
+          "name": "200 Days Badge (100+ Problems Solved) - LeetCode",
           "date": "Aug 2024"
         },
         {
-          "name": "Applied Algorithms & Data Structures – AlgoZenith",
+          "name": "Published Research Paper: A Deep Learning Approach to Stock Market Prediction - IRJMETS",
+          "date": "Apr 2024"
+        },
+        {
+          "name": "Applied Data Structures and Algorithms Specialization – AlgoZenith",
           "date": "Oct 2023"
         }
       ]

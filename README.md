@@ -2,16 +2,16 @@
 
 > Interactive terminal resume - Clean, fast, and developer-friendly!
 > 
-> [![npm version](https://badge.fury.io/js/rakeshsingh61.svg)](https://www.npmjs.com/package/rakeshsingh61)
+> [![npm version](https://badge.fury.io/js/rakeshsingh.svg)](https://www.npmjs.com/package/rakeshsingh)
 
 ## 🚀 Quick Start
 
 ```bash
 # Run instantly
-npx @rakeshsingh61
+npx rakeshsingh
 
 # Or install globally
-npm install -g @rakeshsingh61
+npm install -g rakeshsingh
 ```
 
 ## 🎯 Commands
@@ -19,10 +19,11 @@ npm install -g @rakeshsingh61
 ### Basic Info
 
 -   `--name`, `--email`, `--phone`, `--location` - Contact details
--   `--contact` - All contact info
+-   `--contact` - All contact info (email, phone, LinkedIn, GitHub, Portfolio, LeetCode)
 -   `--skills` - Technical skills
--   `--projects [name]` - Projects (filter by name/number)
+-   `--projects [name]` - Projects with full details including links (filter by name/number)
 -   `--education` - Education background
+-   `--achievements` - Certifications and achievements
 
 ### Links
 
@@ -41,41 +42,45 @@ npm install -g @rakeshsingh61
 
 ```bash
 # View full resume
-npx rakeshsingh61
+npx rakeshsingh
 
 # Get contact info
-npx rakeshsingh61 --contact
-npx rakeshsingh61 --email
+npx rakeshsingh --contact
+npx rakeshsingh --email
 
 # View projects
-npx rakeshsingh61 --projects
-npx rakeshsingh61 --projects Timeline
+npx rakeshsingh --projects
+npx rakeshsingh --projects 1
+npx rakeshsingh --projects Timeline
+
+# View achievements
+npx rakeshsingh --achievements
 
 # Get links
-npx rakeshsingh61 --portfolio
-npx rakeshsingh61 --github
-npx rakeshsingh61 --download
+npx rakeshsingh --portfolio
+npx rakeshsingh --github
+npx rakeshsingh --download
 
 # Save resume
-npx rakeshsingh61 --save
-npx rakeshsingh61 --save my-resume.txt
+npx rakeshsingh --save
+npx rakeshsingh --save my-resume.txt
 
 # Export as JSON
-npx rakeshsingh61 --json > resume.json
+npx rakeshsingh --json > resume.json
 ```
 
 ## ℹ️ Help
 
 ```bash
 # See all available commands
-npx rakeshsingh61 --help
+npx rakeshsingh --help
 ```
 
 ## 🤝 Connect with Rakesh
 
 -   **🌐 Portfolio:** [iamrakesh.codes](https://iamrakesh.codes)
 -   **📧 Email:** rakeshsinghtcp@gmail.com
--   **📍 Location:** Navi Mumbai, India
+-   **📍 Location:** Mumbai, India
 
 ## 📝 License
 
